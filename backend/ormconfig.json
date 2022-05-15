@@ -1,0 +1,25 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "root",
+   "password": "",
+   "database": "kolcsonzo",
+   "synchronize": true,
+   "logging": true,
+   "migrationsRun": true,
+   "entities": [
+      "backend/src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "backend/src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "backend/src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "backend/src/entity",
+      "migrationsDir": "backend/src/migration",
+      "subscribersDir": "backend/src/subscriber"
+   }
+}
